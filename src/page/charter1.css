@@ -1,0 +1,266 @@
+.chart {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1512px;
+  height: 982px;
+  position: relative;
+  overflow: hidden;
+}
+
+.chart .overlap-wrapper {
+  background-color: #ffffff;
+  height: 982px;
+  width: 1512px;
+}
+
+.chart .overlap {
+  height: 982px;
+  position: relative;
+}
+
+.chart .root {
+  height: 768px;
+  left: 716px;
+  position: absolute;
+  top: 424px;
+  width: 1029px;
+}
+
+.chart .fruit {
+  height: 709px;
+  left: 0;
+  position: absolute;
+  top: 392px;
+  width: 469px;
+}
+
+.chart .flower {
+  height: 502px;
+  left: 1172px;
+  position: absolute;
+  top: 104px;
+  width: 502px;
+}
+
+.chart .allglass {
+  height: 426px;
+  left: 1265px;
+  position: absolute;
+  top: 606px;
+  width: 568px;
+}
+
+.chart .stone {
+  height: 452.61px;
+  left: 324.09px;
+  position: absolute;
+  top: 630px;
+  width: 551.74px;
+}
+
+.chart .undergrounder {
+  height: 982px;
+  left: 0;
+  mix-blend-mode: multiply;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1512px;
+}
+
+.chart .group {
+  height: 440px;
+  left: 156px;
+  position: absolute;
+  top: 120px;
+  width: 999px;
+}
+
+.chart .text-wrapper {
+  color: #000000;
+  font-family: "FZGuoMeiJinDaoTiJF-Regular", Helvetica;
+  font-size: 60px;
+  font-weight: 400;
+  left: 832px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 127px;
+  width: 67px;
+}
+
+.chart .div {
+  color: #000000;
+  font-family: "FZGuoMeiJinDaoTiJF-Regular", Helvetica;
+  font-size: 30px;
+  font-weight: 400;
+  left: 942px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 265px;
+  width: 45px;
+}
+
+.chart .overlap-group {
+  height: 327px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 414px;
+}
+
+.chart .text-wrapper-2 {
+  color: #2d2d2d;
+  font-family: "FZWZZYJW-Regular", Helvetica;
+  font-size: 200px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+
+.chart .text-wrapper-3 {
+  color: #2d2d2d;
+  font-family: "FZWZZYJW-Regular", Helvetica;
+  font-size: 220px;
+  font-weight: 400;
+  left: 194px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 54px;
+}
+
+.chart .overlap-2 {
+  height: 346px;
+  left: 416px;
+  position: absolute;
+  top: 0;
+  width: 367px;
+}
+
+.chart .text-wrapper-4 {
+  color: #2d2d2d;
+  font-family: "FZWZZYJW-Regular", Helvetica;
+  font-size: 200px;
+  font-weight: 400;
+  left: 167px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 98px;
+}
+
+.chart .navbar {
+  -webkit-backdrop-filter: blur(14px) brightness(100%);
+  backdrop-filter: blur(14px) brightness(100%);
+  background-color: #ffffff;
+  height: 81px;
+  left: 33px;
+  position: absolute;
+  top: 30px;
+  width: 1436px;
+}
+
+.chart .text-wrapper-5 {
+  color: #00000099;
+  font-family: var(--body-medium-font-family);
+  font-size: var(--body-medium-font-size);
+  font-style: var(--body-medium-font-style);
+  font-weight: var(--body-medium-font-weight);
+  left: 761px;
+  letter-spacing: var(--body-medium-letter-spacing);
+  line-height: var(--body-medium-line-height);
+  position: absolute;
+  top: 28px;
+  white-space: nowrap;
+}
+
+.chart .text-wrapper-6 {
+  color: #00000099;
+  font-family: var(--body-medium-font-family);
+  font-size: var(--body-medium-font-size);
+  font-style: var(--body-medium-font-style);
+  font-weight: var(--body-medium-font-weight);
+  left: 901px;
+  letter-spacing: var(--body-medium-letter-spacing);
+  line-height: var(--body-medium-line-height);
+  position: absolute;
+  top: 28px;
+  white-space: nowrap;
+}
+
+.chart .text-wrapper-7 {
+  color: #00000099;
+  font-family: var(--body-medium-font-family);
+  font-size: var(--body-medium-font-size);
+  font-style: var(--body-medium-font-style);
+  font-weight: var(--body-medium-font-weight);
+  left: 1012px;
+  letter-spacing: var(--body-medium-letter-spacing);
+  line-height: var(--body-medium-line-height);
+  position: absolute;
+  top: 28px;
+  white-space: nowrap;
+}
+
+.chart .text-wrapper-8 {
+  color: #00000099;
+  font-family: var(--body-medium-font-family);
+  font-size: var(--body-medium-font-size);
+  font-style: var(--body-medium-font-style);
+  font-weight: var(--body-medium-font-weight);
+  left: 1104px;
+  letter-spacing: var(--body-medium-letter-spacing);
+  line-height: var(--body-medium-line-height);
+  position: absolute;
+  top: 28px;
+  white-space: nowrap;
+}
+
+.chart .text-wrapper-9 {
+  color: #00000099;
+  font-family: var(--body-medium-font-family);
+  font-size: var(--body-medium-font-size);
+  font-style: var(--body-medium-font-style);
+  font-weight: var(--body-medium-font-weight);
+  left: 1205px;
+  letter-spacing: var(--body-medium-letter-spacing);
+  line-height: var(--body-medium-line-height);
+  position: absolute;
+  top: 28px;
+  white-space: nowrap;
+}
+
+.chart .buttons-instance {
+  left: 1305px !important;
+  position: absolute !important;
+  top: 21px !important;
+}
+
+.chart .div-wrapper {
+  background-image: url("/plant/underground.svg");
+  background-size: 100% 100%;
+  height: 49px;
+  left: 20px;
+  position: absolute;
+  top: 18px;
+  width: 46px;
+}
+
+.chart .text-wrapper-10 {
+  color: #2d2d2d;
+  font-family: "FZWZZYJW-Regular", Helvetica;
+  font-size: 36px;
+  font-weight: 400;
+  left: 5px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}

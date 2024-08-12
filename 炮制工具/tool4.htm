@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        @font-face {
+            font-family: 'FZGuoMeiJinDaoTiJF-Regular';
+            src: url('./font/FZGuoMeiJinDaoTiJF.TTF') format('truetype')
+        }
+
+        @font-face {
+            font-family: 'FZKeBenFangSongS-R-GB-Regular';
+            src: url('./font/FZKBFSJW.TTF') format('truetype')
+        }
+
+        .macbook-pro {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .macbook-pro .div {
+            background-color: #ffffff;
+            width: 1512px;
+            height: 982px;
+            position: relative;
+        }
+
+        .macbook-pro .overlap {
+            width: 1358px;
+            top: 12px;
+            left: 16px;
+            position: absolute;
+            height: 902px;
+        }
+
+        .macbook-pro .overlap-group {
+            width: 1327px;
+            top: 0;
+            left: 0;
+            position: absolute;
+            height: 902px;
+        }
+
+        .macbook-pro .text-wrapper {
+            width: 191px;
+            top: 22px;
+            left: 14px;
+            font-family: "FZGuoMeiJinDaoTiJF-Regular", Helvetica;
+            font-size: 183.4px;
+            line-height: 163.8px;
+            position: absolute;
+            font-weight: 400;
+            color: #be8b52;
+            letter-spacing: 0;
+        }
+
+        .macbook-pro .line {
+            height: 361px;
+            top: 0;
+            left: 14px;
+            position: absolute;
+            width: 2px;
+        }
+
+        .macbook-pro .img {
+            height: 332px;
+            top: 35px;
+            left: 1229px;
+            position: absolute;
+            width: 2px;
+        }
+
+        .macbook-pro .line-2 {
+            height: 343px;
+            top: 34px;
+            left: 1031px;
+            position: absolute;
+            width: 2px;
+        }
+
+        .macbook-pro .line-3 {
+            height: 343px;
+            top: 34px;
+            left: 917px;
+            position: absolute;
+            width: 2px;
+        }
+
+        .macbook-pro .text-wrapper-2 {
+            width: 24px;
+            top: 33px;
+            left: 1135px;
+            font-family: "华文楷体", Helvetica;
+            font-size: 22px;
+            line-height: 22px;
+            position: absolute;
+            font-weight: 400;
+            color: #be8b52;
+            letter-spacing: 0;
+        }
+
+        .macbook-pro .text-wrapper-3 {
+            width: 24px;
+            top: 33px;
+            left: 1081px;
+            font-family: "华文楷体", Helvetica;
+            font-size: 22px;
+            line-height: 22px;
+            position: absolute;
+            font-weight: 400;
+            color: #be8b52;
+            letter-spacing: 0;
+        }
+
+        .macbook-pro .image {
+            position: absolute;
+            width: 1327px;
+            height: 629px;
+            top: 273px;
+            left: 0;
+            object-fit: cover;
+        }
+
+        .macbook-pro .text-wrapper-4 {
+            width: 61px;
+            top: 20px;
+            left: 1297px;
+            font-family: "FZKeBenFangSongS-R-GB-Regular", Helvetica;
+            font-size: 50px;
+            line-height: 50px;
+            position: absolute;
+            font-weight: 400;
+            color: #be8b52;
+            letter-spacing: 0;
+        }
+
+        .macbook-pro .text-wrapper-5 {
+            width: 61px;
+            top: 20px;
+            left: 949px;
+            font-family: "FZKeBenFangSongS-R-GB-Regular", Helvetica;
+            font-size: 50px;
+            line-height: 48.5px;
+            position: absolute;
+            font-weight: 400;
+            color: #be8b52;
+            letter-spacing: 0;
+        }
+
+        .macbook-pro .text-wrapper-6 {
+            width: 24px;
+            top: 33px;
+            left: 1190px;
+            font-family: "华文楷体", Helvetica;
+            font-size: 22px;
+            line-height: 22px;
+            position: absolute;
+            font-weight: 400;
+            color: #be8b52;
+            letter-spacing: 0;
+        }
+
+        .macbook-pro .text-wrapper-7 {
+            width: 24px;
+            top: 33px;
+            left: 1163px;
+            font-family: "华文楷体", Helvetica;
+            font-size: 22px;
+            line-height: 22px;
+            position: absolute;
+            font-weight: 400;
+            color: #be8b52;
+            letter-spacing: 0;
+        }
+
+        .macbook-pro .text-wrapper-8 {
+            width: 24px;
+            top: 33px;
+            left: 1108px;
+            font-family: "华文楷体", Helvetica;
+            font-size: 22px;
+            line-height: 22px;
+            position: absolute;
+            font-weight: 400;
+            color: #be8b52;
+            letter-spacing: 0;
+        }
+
+        .macbook-pro .text-wrapper-9 {
+            width: 24px;
+            top: 33px;
+            left: 1053px;
+            font-family: "华文楷体", Helvetica;
+            font-size: 22px;
+            line-height: 22px;
+            position: absolute;
+            font-weight: 400;
+            color: #be8b52;
+            letter-spacing: 0;
+        }
+
+        .macbook-pro .text-wrapper-10 {
+            width: 26px;
+            top: 33px;
+            left: 861px;
+            font-family: "华文楷体", Helvetica;
+            font-size: 18px;
+            line-height: 18px;
+            position: absolute;
+            font-weight: 400;
+            color: #be8b52;
+            letter-spacing: 0;
+        }
+
+        .macbook-pro .text-wrapper-11 {
+            width: 61px;
+            top: 32px;
+            left: 1379px;
+            font-family: "FZKeBenFangSongS-R-GB-Regular", Helvetica;
+            font-size: 50px;
+            line-height: 50px;
+            position: absolute;
+            font-weight: 400;
+            color: #be8b52;
+            letter-spacing: 0;
+        }
+
+        .macbook-pro .text-wrapper-12 {
+            width: 61px;
+            top: 490px;
+            left: 1440px;
+            font-family: "FZKeBenFangSongS-R-GB-Regular", Helvetica;
+            font-size: 50px;
+            line-height: normal;
+            position: absolute;
+            font-weight: 400;
+            color: #be8b52;
+            letter-spacing: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="macbook-pro">
+        <div class="div">
+            <div class="overlap">
+                <div class="overlap-group">
+                    <div class="text-wrapper">戥秤</div>
+                    <img class="line" src="img/line-4.svg" />
+                    <img class="img" src="img/line-4.svg" />
+                    <img class="line-2" src="img/line-4.svg" />
+                    <img class="line-3" src="img/line-4.svg" />
+                    <div class="text-wrapper-2">出现在春秋战国时期的青铜器中</div>
+                    <div class="text-wrapper-3">这些青铜戥秤通常由秤杆</div>
+                    <img class="image" src="img/image 4.png" />
+                </div>
+                <div class="text-wrapper-4">中医药药具</div>
+                <div class="text-wrapper-5">使用目的</div>
+                <div class="text-wrapper-6">根据考古发现</div>
+                <div class="text-wrapper-7">最早的切药刀</div>
+                <div class="text-wrapper-8">已经发现了戥秤的雏形</div>
+                <div class="text-wrapper-9">秤盘、砣等部件组成</div>
+                <div class="text-wrapper-10">精确称量贵重药物</div>
+            </div>
+            <div class="text-wrapper-11">中国传统</div>
+            <div class="text-wrapper-12">春秋战国时期至今</div>
+        </div>
+    </div>
+</body>
+
+</html>

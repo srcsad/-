@@ -1,0 +1,363 @@
+   @font-face {
+     font-family: 'FZGuoMeiJinDaoTiJF-Regular';
+     src: url('./font/FZGuoMeiJinDaoTiJF.TTF') format('truetype')
+   }
+
+   @font-face {
+     font-family: 'FZKeBenFangSongS-R-GB-Regular';
+     src: url('./font/FZKBFSJW.TTF') format('truetype')
+   }
+
+   @font-face {
+     font-family: 'FZWZZYJW-Regular';
+     src: url('./font/FZWZZYJW.TTF') format('truetype')
+   }/* Scroll */
+li {
+  margin-bottom: 15px;
+  font-family: "FZGuoMeiJinDaoTiJF-Regular";
+}
+
+button {
+  margin-bottom: 28px;
+  background-color: #ffffff;
+  font-size: 20px;
+  border: 0;
+  width: 8vw;
+}
+
+.boxcontainer {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.box {
+  flex-shrink: 0;
+  width: 50vw;
+  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* outline: 1px solid orange; */
+  /* background-color: rgb(199, 199, 199); */
+}
+.box li{
+  width: 4.4vw;
+  height: 30vh;
+}
+.box li div {
+  z-index:1;
+}
+.box li a:hover {
+  div{
+    color: snow;
+  }
+  .line1{
+    background-color: snow;
+  }
+    canvas {
+      opacity: 1;
+      background-color: rgb(79, 55, 185);
+    }
+}
+
+.box li a{
+  opacity: 1 !important;
+}
+.box li canvas{
+  position: relative;
+  width: 4.2vw;
+  height: 30vh;
+  top: -2vh !important;
+  left: 0.25vw !important;
+  z-index:0 !important;
+  /* background-color: aquamarine; */
+}
+.colorbox{
+  position: absolute;
+  background-color: rgba(79, 55, 185, 0.6);
+  width: 3vw;
+  height: 3vw;
+  border-radius: 1vw;
+  top:16vh;
+  left: 90vw ;
+}
+.boxTitle {
+  position: relative;
+  top: 10vh;
+  left: 12vw;
+  font-family: "FZGuoMeiJinDaoTiJF-Regular", Helvetica;
+  font-size: 6vw;
+  font-weight: 500;
+  letter-spacing: 0px;
+  line-height: 20px;
+  writing-mode: vertical-rl;
+  color: rgba(0, 0, 0, 1);
+}
+
+.boxText {
+  display: flex;
+  position: relative;
+  top: -15vh;
+  left: 70vw;
+  width: 20vw;
+  font-family: "FZGuoMeiJinDaoTiJF-Regular", Helvetica;
+  font-size: 1vw;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 4vh;
+
+  color: rgba(0, 0, 0, 1);
+}
+
+/* List */
+.biaoti {
+  position: relative;
+  top: 20vh;
+  left: 5vw;
+  right: 0;
+  bottom: 0;
+  font-family: "Microsoft YaHei", "微软雅黑", Helvetica;
+  font-size: 1.2vw;
+  font-weight: 500;
+  letter-spacing: 0px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 1);
+  text-align: left;
+}
+
+.line {
+  display: flex;
+  position: relative;
+  left: 5.2vw;
+  top: 33vh;
+  width: 2.5vw;
+  height: 0.2vh;
+  font-family: "Microsoft YaHei", "微软雅黑", Helvetica;
+  font-size: 0.7vw;
+  font-weight: 400;
+  letter-spacing: 0.2vw;
+  line-height: 2.6vh;
+  background: rgba(0, 0, 0, 1);
+}
+
+.line1 {
+  position: absolute;
+  left: 1.9vw;
+  top: 10vh;
+  width: 0.15vw;
+  height: 15vh;
+  font-family: "Microsoft YaHei", "微软雅黑", Helvetica;
+  font-size: 1vw;
+  font-weight: 400;
+  letter-spacing: 0.2vw;
+  line-height: 1vw;
+  background: rgba(0, 0, 0, 1);
+}
+
+.text {
+  position: absolute;
+  left: -1.2vw;
+  top: 0vh;
+  /* width: 0.6vw; */
+  height: 5vh;
+  writing-mode: vertical-rl;
+  font-family: "Microsoft YaHei", "微软雅黑", Helvetica;
+  font-size: 0.6vw;
+  font-weight: 500;
+  letter-spacing: 0.2vw;
+  line-height: 1vw;
+}
+
+.rightPage {
+  position: relative;
+  width: 50vw;
+  height: 100vh;
+  left: 50vw;
+  top: 10vh;
+  margin-top: 0;
+  transform-style: preserve-3d;
+}
+
+#myName {
+  position: relative;
+  top: 13vh;
+  left: 5vw;
+  right: 0;
+  bottom: 0;
+  font-family: "FZGuoMeiJinDaoTiJF-Regular", "微软雅黑", Helvetica;
+  font-size: 3vw;
+  font-weight: 400;
+  letter-spacing: 1vw;
+  line-height: 50px;
+  color: rgba(0, 0, 0, 1);
+  text-align: left;
+}
+
+#mypinyin {
+  position: relative;
+  top: 0vh;
+  left: 4vw;
+  font-family: "Microsoft YaHei", "微软雅黑", Helvetica;
+  font-size: 1.2vw;
+  font-weight: 400;
+  letter-spacing: 4px;
+  line-height: 50px;
+  color: rgba(0, 0, 0, 1);
+  text-align: left;
+}
+
+#jianjie {
+  position: relative;
+  top: 42vh;
+  left: 5vw;
+  width: 40vw;
+  right: 0;
+  bottom: 0;
+  font-family: "Microsoft YaHei", "微软雅黑", Helvetica;
+  font-size: 0.8vw;
+  font-weight: 200;
+  letter-spacing: 0.1vh;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 1);
+  text-align: left;
+}
+
+#myCanvas {
+  position: relative;
+  top: 36.8vh;
+  left: 5vw;
+  width: 6vw;
+  height: 3vw;
+}
+
+#myCanvas1 {
+  position: relative;
+  top: 36.8vh;
+  left: 10vw;
+  width: 6vw;
+  height: 3vw;
+}
+
+#colors {
+  position: relative;
+  width: 40vw;
+  height: 100%;
+  left: -23px;
+  top: 0;
+  margin-top: 0;
+  transform-style: preserve-3d;
+  /*-webkit-animation: color-rotate 10s infinite linear;*/
+}
+
+#colors li {
+  cursor: pointer;
+  position: absolute;
+  /*display: inline-block;*/
+  margin-top: 10vh;
+  margin-right: 15vw;
+  width: 5vw;
+  height: 4vh;
+  background-repeat: no-repeat;
+  list-style: none;
+}
+
+#colors li a {
+  opacity: 0.8;
+  display: block;
+  overflow: hidden;
+  width: 50px;
+  height: 278px;
+  color: #000000;
+  transition: background-color 0.15s linear;
+  padding-left: 1.8em;
+  text-decoration: none;
+}
+
+#colors li a .name {
+  position: absolute;
+  left: 1.5vw;
+  top: -1vh;
+  opacity: 1;
+  font-family: "Microsoft YaHei", "微软雅黑", Helvetica;
+  font-size: 0.9vw;
+  font-weight: 550;
+  letter-spacing: 0.5vh;
+  line-height: 1.6;
+  display: block;
+  width: 1em;
+}
+
+#colors li a .pinyin {
+  position: absolute;
+  left: 3vw;
+  top: -0.2vh;
+  font-family: "Microsoft YaHei", "微软雅黑", Helvetica;
+  font-size: 0.6vw;
+  font-weight: 300;
+  line-height: 0.6;
+  writing-mode: vertical-rl;
+  width: 1em;
+}
+
+#colors li a .rgb {
+  right: 35px;
+  font-size: 11px;
+  font-family: Helvetica;
+}
+
+#colors li a:hover {
+  opacity: 0.3;
+  transition-duration: 0.3s;
+  transition-property: color, background-color, opacity;
+}
+
+/* #colors li div {
+  background: url(../image/col_bg.png) no-repeat;
+} */
+
+#colors li div canvas {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.overlap {
+  position: fixed;
+  width: 75px;
+  height: 254px;
+  top: 10px;
+  left: 90vw;
+}
+.text-wrapper {
+  width: 57px;
+  top: 0;
+  left: 0;
+  color: #000000;
+  font-size: 50.6px;
+  position: absolute;
+  font-family: "FZKeBenFangSongS-R-GB-Regular", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.text-wrapper-2 {
+  width: 57px;
+  top: 24px;
+  left: -65px;
+  color: #000000;
+  font-size: 50.6px;
+  position: absolute;
+  font-family: "FZKeBenFangSongS-R-GB-Regular", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.ellipse {
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  top: 188px;
+  left: 9px;
+  border-radius: 33px;
+  background: linear-gradient(180deg, rgb(216, 89, 22) 0%, rgb(255, 255, 255) 100%);
+}

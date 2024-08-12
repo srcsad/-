@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>药香熏蕴
+</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        .trans {
+
+            /* display: inline; */
+            position: relative;
+            transform: scale(0.75);
+            transform-origin: center 0;
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box {
+            position: relative;
+            overflow: hidden;
+            overflow-y: hidden;
+            top: 1vh;
+            width: 99vw;
+            height: 97vh;
+            margin: 0 auto;
+            /* border: 1px solid black; */
+        }
+
+        .box1 {
+            position: relative;
+            width: 98vw;
+            height: 100vh;
+        }
+
+        .box iframe {
+            position: absolute;
+            transform: scale(0.7);
+            left: -75vw;
+            top: -40vh;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top TIJW">
+        <div class="container">
+            <a href="#" class="navbar-brand TIJF">药香熏蕴</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto TIJF">
+                    <li class="item"><a href="#pzqy">
+                            <div class="nav-link">中药炮制的起源</div>
+                        </a>
+                    </li>
+                    <li class="item"><a href="#gjjf">
+                            <div class="nav-link">古籍技法</div>
+                        </a>
+                    </li>
+                    <li class="item"><a href="#pzff">
+                            <div class="nav-link">炮制方法</div>
+                        </a>
+                    </li>
+                    <li class="item"><a href="#pzmd">
+                            <div class="nav-link">炮制目的</div>
+                        </a>
+                    </li>
+                    <li class="item"><a href="#cybz">
+                            <div class="nav-link">成药标准</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div style="height: 921px;">
+        <div class="trans">
+            <!-- chart1 -->
+            <div class="StyledChart">
+                <div class="overlap-wrapper">
+                    <div class="overlap">
+                        <img class="root" alt="Root" src="img/root.png" />
+                        <img class="flower" alt="Flower" src="img/flower.png" />
+                        <img class="allglass" alt="Allglass" src="img/allglass.png" />
+                        <img class="stone" alt="Stone" src="img/stone.png" />
+
+                        <div class="group">
+                            <div class="text-wrapper">中药炮制</div>
+                            <div class="div">数据可视化</div>
+                            <div class="overlap-group">
+                                <div class="text-wrapper-2">药</div>
+                                <div class="text-wrapper-3">香</div>
+                            </div>
+                            <div class="overlap-2">
+                                <div class="text-wrapper-2">熏</div>
+                                <div class="text-wrapper-4">蕴</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- chart02 -->
+            <div class="chart" id="pzqy">
+                <div class="overlap-group-wrapper">
+                    <div class="overlap-group">
+                        <!-- <img class="fruit" alt="Fruit" src="img/fruit.png" />
+                    <img class="stone" alt="Stone" src="img/stone.png" />
+                    <img class="root" alt="Root" src="img/root.png" /> -->
+                        <img class="line" alt="Line" src="line-1.svg" />
+                        <div class="text-wrapper">中药炮制</div>
+                        <div class="div">中药炮制</div>
+                        <div class="element">
+                            中药炮制对中药的临床应用具有重要意义。通过炮制，可以提高中药的疗效，降低其毒副作用，改善其性状，便于储存和运输，满足临床用药需求。
+                            <br />
+                            中药炮制的历史悠久，可以追溯到上古时期。《神农本草经》中记载了270多种药物的炮制方法。在历代医家不断实践和总结的基础上，中药炮制技术逐渐发展完善，形成了系统的理论和实践体系。中药炮制是一项复杂的技术，需要掌握丰富的理论知识和实践经验。在实际应用中，应根据具体情况选择合适的炮制方法，以确保药物的质量和疗效
+                        </div>
+                        <!-- <img class="background" alt="Background" src="background.png" />  -->
+                    </div>
+                </div>
+            </div>
+            <!-- chart03 -->
+            <div class="c3chart">
+                <div class="c3div">
+                    <div class="c3overlap">
+                        <div class="c3text-wrapper">炮</div>
+                        <div class="c3overlap-group">
+                            <div class="c3text-wrapper-2">制</div>
+                            <img class="c3image" src="img/image 204.png" />
+                        </div>
+                        <div class="c3text-wrapper-3">随</div>
+                    </div>
+                    <div class="c3text-wrapper-4">药</div>
+                    <div class="c3text-wrapper-5">生</div>
+                    <div class="c3text-wrapper-6">
+                        人们有时误食某些有毒植物和动物，以致发生呕吐、泄泻、昏迷，甚至于死亡，有时吃了之后使疾病减轻或消失，久而久之，这种感性知识积累多了便成了最初的药物知识。随着医药技术的进步，为了更好地发挥药效作用，又将这些天然药物进行一定的加工。这些简单加工经过积累和发展，就成了早期中药饮片炮制的“洗净法”、“切法”、“捣法”等。这便是中药炮制的萌芽。
+                    </div>
+                    <div class="c3text-wrapper-7">中药炮制<br />发展历程</div>
+                    <img class="c3line" src="img/line-2.svg" />
+                </div>
+            </div>
+            <!-- chart04 -->
+            <div class="c4ChartWrapper">
+                <div class="c4OverlapGroupWrapper">
+                    <div class="c4OverlapGroup">
+                        <img class="c4img" alt="img" src="img/fire.png" />
+                        <div class="c4TextWrapper">火</div>
+                        <div class="c4TextWrapper0">炙</div>
+                        <div class="c4TextWrapper2">伴</div>
+                        <div class="c4TextWrapper3">现</div>
+                        <div class="c4TextWrapper4">法</div>
+                        <div class="c4TextWrapper5">
+                            中药炮制古称“炮炙”，就是指用火加工处理药材的方法。由于人类对火的应用，为早期中药采用高温处理的“炮炙法”、“药炒法”的出现创造了基本条件。。
+                        </div>
+                        <img class="c4Line" src="line-2.svg" alt="Line" />
+                    </div>
+                </div>
+            </div>
+            <!-- chart05 -->
+            <div class="c5ChartWrapper">
+                <div class="c5OverlapGroupWrapper">
+                    <div class="c5OverlapGroup">
+                        <div class="c5Overlap">
+                            <div class="c5Div">
+                                <img class="c5img" alt="img" src="img/aco.png" />
+                                <div class="c5TextWrapper">酒</div>
+                                <div class="c5TextWrapper0">得</div>
+                                <div class="c5TextWrapper2">成</div>
+                            </div>
+                            <div class="c5TextWrapper3">
+                                酒是用于炮制中药的重要辅料和制药溶媒之一，酒的发明与应用，在中国非常久远，起源于旧石器时代，在新石器时代有所进展，而广泛应用于奴隶制社会时期。新石器晚期的龙山文化，则发现有专用酒器，殷商文化中发现更多的专用酒器，在殷墟出土的甲骨文中有“鬯”字，鬯就是芳香性的药酒，供祭祖用。人们直接用酒来医病，或用作制药的溶剂制成“药酒”对抗疾病。酒的发明与应用，丰富了用药经验并被引用于炮制药物，从而产生了辅料制法，充实了药物炮制的内容。
+                            </div>
+                        </div>
+                        <div class="c5TextWrapper4">辅</div>
+                        <div class="c5TextWrapper5">料</div>
+                    </div>
+                </div>
+            </div>
+            <!-- chart06 -->
+            <div class="c6macbook-pro">
+                <div class="c6div">
+                    <div class="c6overlap">
+                        <img class="c6taoqi" src="img/taoqi.png" />
+                        <div class="c6text-wrapper">
+                            人类在长期利用火的过程中，对土壤的可塑性也有了逐步的认识，为陶器的发明准备了条件。在中国仰韶文化时期（公元前5000年左右），就有了砂锅、陶罐等烹饪器和储存器，为早期中药炮制的蒸制法、煮制法、煅制法（陶制煅药罐）以及存放中药汤剂等创造了必要的工具条件。陶器的发明和应用，极大丰富和拓展了炮制的内容。
+                        </div>
+                    </div>
+                    <div class="c6overlap-group">
+                        <div class="c6text-wrapper-2">法</div>
+                        <div class="c6text-wrapper-3">万</div>
+                    </div>
+                    <div class="c6text-wrapper-4">全</div>
+                    <div class="c6text-wrapper-5">器</div>
+                    <div class="c6text-wrapper-6">诞</div>
+                </div>
+            </div>
+            <!-- books -->
+            <div class="box1" id="gjjf">
+                <iframe width="100%" height="100%" scrolling="no" src="src\page\books.htm" frameborder="0"
+                    style="position: relative; top: 10vh;">
+                </iframe>
+
+            </div>
+            <!-- chart08 -->
+            <div class="c8ChartWrapper" id="pzff">
+                <div class="c8OverlapWrapper">
+                    <div class="c8Overlap">
+                        <img alt="line" src="line.svg">
+                        <img alt="line" src="line.svg">
+                        <div class="c8TextWrapper">炮制方法</div>
+                        <div class="c8Div">炮制方法</div>
+                        <div class="c8TextWrapper2">
+                            中药炮制是指在中医理论的指导下，按中医用药要求将中药材加工成中药饮片的传统方法和技术，古时又称“炮炙”、“修事”、“修治”。
+                            药物经炮制后，不仅可以提高药效、降低药物的毒副作用，而且方便存储，是中医临床用药的必备工序。
+                            2006年5月，中药炮制技术被列入第一批国家非物质文化遗产名录传统医药类
+                        </div>
+                        <div class="c8Group">
+                            <!-- <div class="c8OverlapGroup">
+                                <div class="c8OverlapGroup2">
+                                    <img alt="Fruit" src="plant/fruit.png">
+                                    <img alt="Flower" src="plant/flower.png">
+                                </div>
+                                <img alt="Allgrass" src="plant/allglass.png">
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- chart09 -->
+            <div class="c9macbook-pro" id="fftb">
+                <div class="c9div">
+                    <div class="c9text-wrapper">炮制方法</div>
+                    <div class="c9element">
+                        中药炮制是指在中医理论的指导下，按中医用药要求将中药材加工成中药饮片的传统方法和技术，古时又称“炮炙”、“修事”、“修治”。
+                        药物经炮制后，不仅可以提高药效、降低药物的毒副作用，而且方便存储，是中医临床用药的必备工序。
+                        2006年5月，中药炮制技术被列入第一批国家非物质文化遗产名录传统医药类
+                    </div>
+                    <button class="c9buttons">
+                        <a href="炮制方法.htm">
+                            <div class="c9text-wrapper-2">查看图表</div>
+                        </a>
+
+                    </button>
+                    <img class="c9waterfire" src="img/waterfire.png" />
+                    <img class="c9fire" src="img/fir.png" />
+                    <img class="c9waterwater" src="img/waterwater.png" />
+                    <img class="c9xiuzhi" src="img/xiuzhi.png" />
+                </div>
+            </div>
+            <!-- tools -->
+            <div class="box">
+                <iframe width="260%" height="250%" scrolling="no" src="炮制工具\Tools.htm" frameborder="0">
+                </iframe>
+            </div>
+            <!-- 辅料 -->
+            <div class="box1">
+                <iframe width="100%" height="100%" scrolling="no" src="static\Zz_fff.cmiscm.com\index.html" frameborder="0">
+                </iframe>
+
+            </div>
+            <!-- chart10 -->
+            <div class="c10macbook-pro" id="pzmd">
+                <div class="c10overlap-wrapper">
+                    <div class="c10overlap">
+                        <div class="c10overlap-group">
+                            <div class="c10text-wrapper">炮制目的</div>
+                            <div class="c10div">
+                                中药炮制是中医药学中的重要组成部分，是指在中药材应用或制成制剂前，进行必要加工处理的过程。其目的主要包括：<br />提高药效：通过炮制，可以去除中药材的毒性或副作用，增强其疗效。<br />便于服用：炮制可以改变中药材的性状，使其更容易煎煮或服用。<br />延长保质期：炮制可以杀死中药材中的细菌和微生物，防止其腐烂变质，延长其保质期。<br />满足临床需求：根据不同的临床需求，可以对中药材进行不同的炮制。<br />总而言之，中药炮制是为提高中药安全性、有效性和可使用性而进行的加工处理技术，对于中医药的临床应用具有重要的意义。
+                            </div>
+                            <!-- <div class="c10rectangle"></div> -->
+                            <!-- <img class="root" src="img/root.png" /> -->
+                            <!-- <img class="fruit" src="img/fruit.png" /> -->
+                        </div>
+                        <div class="c10text-wrapper-2">炮制目的</div>
+                        <!-- <div class="c10rectangle-2"></div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- chart11 -->
+            <div class="c11macbook-pro">
+                <div class="c11div">
+                    <div class="c11text-wrapper">炮制目的</div>
+                    <div class="c11text-wrapper-2">
+                        中药材根据入药部位可被分为：根及根茎类、果实类、种子类、全草类、叶类、花类、皮类、藤木类、动物类、矿物类、其他。在此我们分别对每类药材的炮制目的与炮制方法的关系进行了可视化
+                    </div>
+                    <div class="c11group">
+                        <div class="c11overlap-group">
+                            <img class="c11yelei" src="img/yelei.png" />
+                            <img class="c11caolei" src="img/caolei.png" />
+                            <img class="c11wulei" src="img/wulei.png" />
+                            <img class="c11geneli" src="img/geneli.png" />
+                            <img class="c11guolei" src="img/guolei.png" />
+                            <img class="c11pilei" src="img/pilei.png" />
+                            <img class="c11kuanglei" src="img/kuanglei.png" />
+                            <img class="c11hualei" src="img/hualei.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 桑基图 -->
+            <div class="box1">
+                <iframe width="100%" height="100%" scrolling="no" src="src\page\桑基图.htm" frameborder="0"
+                    style="position: relative; top: 10vh;">
+                </iframe>
+
+            </div>
+            <!-- chart13 -->
+            <div class="c13macbook-pro">
+                <div class="c13div">
+                    <div class="c13overlap">
+                        <div class="c13overlap-group">
+                            <div class="c13overlap-group-2">
+                                <img class="c13line" src="img/line-1.png" />
+                                <div class="c13text-wrapper">成药标准</div>
+                                <img class="c13stone" src="img/stone.png" />
+                            </div>
+                            <div class="c13text-wrapper-2">
+                                中药成药标准的制定和实施，需要遵循《中华人民共和国标准化法》和《中华人民共和国中医药法》等相关法律法规。目前，我国已发布一系列中医药相关标准，标准体系已初步建立。主要分为中医药国家标准、行业标准、团体标准、地方标准、国际标准等五大类
+                            </div>
+                        </div>
+                        <!-- <img class="c13flower" src="img/flower.png" /> -->
+                    </div>
+                    <!-- <img class="c13img" src="img/line-2.png" /> -->
+                    <div class="c13text-wrapper-3">成药标准</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 成药标准 -->
+    <div class="box1" id="cybz" style="top: 9221px;">
+        <iframe width="100%" height="100%" scrolling="no" src="src\page\成药标准.htm" frameborder="0">
+        </iframe>
+
+    </div>
+    <script>
+        window.onload = function () {
+            var container = document.querySelector('body');
+            var box1 = document.querySelector('.box');
+
+
+            box1.addEventListener('mouseenter', function () {
+                container.style.overflow = 'hidden';
+            });
+
+            box1.addEventListener('mouseleave', function () {
+                container.style.overflow = 'scroll';
+            });
+        };
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

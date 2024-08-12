@@ -1,0 +1,311 @@
+@font-face {
+    font-family: 'FZWZZYJW';
+    src: url('FZWZZYJW.TTF') format('TTF'),
+       
+}
+
+.slide {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.slide .overlap-wrapper {
+    background-color: #ffffff;
+    width: 1920px;
+    height: 1080px;
+}
+
+.slide .overlap {
+    position: relative;
+    width: 1728px;
+    height: 822px;
+    top: 147px;
+    left: 24px;
+}
+
+.slide .overlap-group {
+    position: absolute;
+    width: 1728px;
+    height: 822px;
+    top: 0;
+    left: 0;
+}
+.slide .vector {
+    position: absolute;
+    width: 771px;
+    height: 9px;
+    top: 500px;
+    left: 957px;
+}
+
+.slide .img {
+    position: absolute;
+    width: 838px;
+    height: 11px;
+    top: 179px;
+    left: 82px;
+}
+
+.slide .vector-2 {
+    position: absolute;
+    width: 838px;
+    height: 11px;
+    top: 701px;
+    left: 82px;
+}
+
+.slide .vector-3 {
+    position: absolute;
+    width: 17px;
+    height: 822px;
+    top: 0;
+    left: 101px;
+}
+
+.slide .vector-4 {
+    position: absolute;
+    width: 17px;
+    height: 822px;
+    top: 0;
+    left: 831px;
+}
+.slide .vector {
+    position: absolute;
+    width: 771px;
+    height: 9px;
+    top: 500px;
+    left: 997px;
+}
+
+.slide .img {
+    position: absolute;
+    width: 838px;
+    height: 11px;
+    top: 179px;
+    left: 82px;
+}
+
+.slide .vector-2 {
+    position: absolute;
+    width: 838px;
+    height: 11px;
+    top: 701px;
+    left: 82px;
+}
+
+.slide .vector-3 {
+    position: absolute;
+    width: 17px;
+    height: 822px;
+    top: 0;
+    left: 101px;
+}
+
+.slide .vector-4 {
+    position: absolute;
+    width: 17px;
+    height: 822px;
+    top: 0;
+    left: 831px;
+}
+.slide .image {
+    position: absolute;
+    width: 994px;
+    height: 647px;
+    top: 139px;
+    left: 0;
+    object-fit: cover;
+}
+
+.slide .text-wrapper {
+    position: absolute;
+    height: 40px;
+    top: 126px;
+    left: 414px;
+    font-family: "FZWZZYJW", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 40px;
+    white-space: nowrap;
+}
+.slide .div {
+    position: absolute;
+    height: 40px;
+    top: 415px;
+    left: 799px;
+    transform: rotate(90deg);
+    font-family: "FZWZZYJW", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 40px;
+    white-space: nowrap;
+}
+
+.slide .ellipse {
+    left: 1704px;
+    background-color: #d9d9d9;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 498px;
+    border-radius: 7px;
+    transform: rotate(90deg);
+}
+.slide .ellipse-2 {
+    left: 1388px;
+    background-color: #000000;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 498px;
+    border-radius: 7px;
+    transform: rotate(90deg);
+}
+
+.slide .ellipse-3 {
+    left: 1072px;
+    background-color: #d9d9d9;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 498px;
+    border-radius: 7px;
+    transform: rotate(90deg);
+}
+
+.slide .vector-5 {
+    position: absolute;
+    width: 516px;
+    height: 8px;
+    top: 501px;
+    left: 987px;
+}
+.slide .text-wrapper-2 {
+    width: 384px;
+    top: 20px;
+    left: 1008px;
+    font-family: "FZWZZYJW", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 128px;
+    letter-spacing: 0;
+    position: absolute;
+    text-align: center;
+    line-height: 40px;
+}
+
+.slide .text-wrapper-3 {
+    position: absolute;
+    width: 513px;
+    top: 106px;
+    left: 1049px;
+    font-family: "HongLei-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 9.6px;
+    line-height: 40px;
+}
+.slide .text-wrapper-4 {
+    width: 513px;
+    height: 80px;
+    top: 312px;
+    left: 1049px;
+    font-family: "HarmonyOS Sans SC-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 4.8px;
+    position: absolute;
+    text-align: left;
+    line-height: 40px;
+}
+
+.slide .div-wrapper {
+    position: absolute;
+    width: 107px;
+    height: 42px;
+    top: 242px;
+    left: 1049px;
+    background-color: #000000;
+    border-radius: 7px;
+}
+.slide .text-wrapper-5 {
+    height: 40px;
+    top: 1px;
+    left: 27px;
+    font-family: "HarmonyOS Sans SC-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 4.8px;
+    white-space: nowrap;
+    position: absolute;
+    text-align: center;
+    line-height: 40px;
+}
+
+.slide .text-wrapper-6 {
+    width: 684px;
+    top: 644px;
+    left: 1019px;
+    font-family: "HarmonyOS Sans SC-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 3.2px;
+    position: absolute;
+    text-align: left;
+    line-height: 40px;
+}
+.slide .text-wrapper-7 {
+    top: 522px;
+    left: 1057px;
+    font-family: "HarmonyOS Sans SC-Bold", Helvetica;
+    font-weight: 700;
+    color: #d9d9d9;
+    font-size: 20px;
+    letter-spacing: 4px;
+    white-space: nowrap;
+    position: absolute;
+    text-align: center;
+    line-height: 40px;
+}
+
+.slide .text-wrapper-8 {
+    top: 522px;
+    left: 1354px;
+    font-family: "HarmonyOS Sans SC-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 4px;
+    white-space: nowrap;
+    position: absolute;
+    text-align: center;
+    line-height: 40px;
+}
+.slide .text-wrapper-9 {
+    top: 522px;
+    left: 1666px;
+    font-family: "HarmonyOS Sans SC-Bold", Helvetica;
+    font-weight: 700;
+    color: #d9d9d9;
+    font-size: 20px;
+    letter-spacing: 4px;
+    white-space: nowrap;
+    position: absolute;
+    text-align: center;
+    line-height: 40px;
+}

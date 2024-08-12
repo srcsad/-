@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="theme-color" content="#ffffff">
+    <title>Form Follows Function</title>
+    <link rel="stylesheet" type="text/css" href="static/css/minify.css">
+    <style>
+        .text {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            z-index: -1;
+            width: 100vw;
+            align-items: center;
+            top: 8%;
+            text-align: center;
+            color: #000;
+        }
+
+        .text .name {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 45px;
+            font-weight: 700;
+            line-height: 90px;
+        }
+
+        .text .jianjie {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 22px;
+            font-size: 14px;
+            font-weight: 300;
+            width: 60vw;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <div id="block"></div>
+    <div id="root">
+        <div id="container">
+            <div id="pantone" class="chand">
+                <div id="pantone-loading"></div>
+            </div>
+            <div id="contents">
+                <div id="detail-con">
+                    <div id="mask"></div>
+                    <div id="poster-con">
+                        <div id="poster-big"></div>
+                    </div>
+                </div>
+                <div id="load-con"></div>
+            </div>
+            <div id="header" class="header-black"></div>
+            <div id="about">
+                <div id="about-right" class="right-pos white">
+                    <div id="about-close-bt" class="buttons close-pos"></div>
+                </div>
+                <div id="about-contents">
+                </div>
+            </div>
+            <div id="footer" class="footer-black"></div>
+            <!-- <img width="310px" height="auto" src=data\poster\tree_c.png > -->
+
+        </div>
+    </div>
+    <div class="text">
+        <div class="name">辅料</div>
+        <div class="jianjie">
+            中药炮制辅料是中药炮制的重要组成部分，对中药饮片的质量和疗效具有重要影响。中药炮制辅料种类繁多，按来源可分为天然辅料和人工辅料；按性状可分为液体辅料和固体辅料；按作用可分为改变性味辅料、增强疗效辅料、降低毒性辅料和改善性状辅料。
+        </div>
+    </div>
+    <div id="check"></div>
+    <script src="static/js/minify-3.js"></script>
+    <script type="text/javascript">
+        $('document').ready(function () { Address.init("tablet") });
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-15463832-11', 'auto');
+        ga('require', 'linkid', 'linkid.js');
+        ga('send', 'pageview');
+    </script>
+</body>
+
+</html>

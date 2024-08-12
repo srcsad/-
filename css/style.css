@@ -1,0 +1,24 @@
+.improve {
+    width: 100vw;
+    height: 100vh;
+
+}
+iframe {
+    overflow: hidden;
+}
+.img-wrap {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-preview {
+    position: absolute;
+}
+
+.img-preview:hover {
+    cursor: move;
+}

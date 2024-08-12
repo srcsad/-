@@ -1,0 +1,101 @@
+.chart {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.chart .overlap-group-wrapper {
+  background-color: #ffffff;
+  height: 982px;
+  width: 1512px;
+}
+
+.chart .overlap-group {
+  height: 982px;
+  position: relative;
+}
+
+.chart .fruit {
+  height: 137px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 446px;
+}
+
+.chart .stone {
+  height: 117px;
+  left: 325px;
+  position: absolute;
+  top: 0;
+  width: 552px;
+}
+
+.chart .root {
+  height: 734px;
+  left: 723px;
+  position: absolute;
+  top: 0;
+  width: 789px;
+}
+
+.chart .line {
+  height: 424px;
+  left: 406px;
+  position: absolute;
+  top: 458px;
+  width: 3px;
+}
+
+.chart .text-wrapper {
+  color: #2d2d2d;
+  font-family: "FZGuoMeiJinDaoTiJF-Regular", Helvetica;
+  font-size: 200px;
+  font-weight: 400;
+  left: 360px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 188px;
+  width: 1085px;
+}
+
+.chart .div {
+  color: #2d2d2d;
+  font-family: "FZGuoMeiJinDaoTiJF-Regular", Helvetica;
+  font-size: 50px;
+  font-weight: 400;
+  left: 1387px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 72px;
+  width: 71px;
+}
+
+.chart .element {
+  color: #000000;
+  font-family: "FZKeBenFangSongS-R-GB-Regular", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 446px;
+  letter-spacing: 0;
+  line-height: 50px;
+  position: absolute;
+  top: 488px;
+  width: 697px;
+}
+
+.chart .background {
+  height: 982px;
+  left: 0;
+  mix-blend-mode: multiply;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1512px;
+}

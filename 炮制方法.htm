@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        .back {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 10px;
+            left: 10px;
+            width: 80px;
+            height: 35px;
+            background-color: #ffffff;
+            border: none;
+            color: #ffffff;
+            font-size: 12px;
+            position: fixed;
+            border-radius: 10px;
+        }
+
+        .backimg {
+            width: 20px;
+            /* height: 30px; */
+        }
+
+        @font-face {
+            font-family: 'FZGuoMeiJinDaoTiJF-Regular';
+            src: url('./炮制工具/font/FZGuoMeiJinDaoTiJF.TTF') format('truetype')
+        }
+
+        @font-face {
+            font-family: 'FZKeBenFangSongS-R-GB-Regular';
+            src: url('./炮制工具/font/FZKBFSJW.TTF') format('truetype')
+        }
+
+        @font-face {
+            font-family: 'FZWZZYJW-Regular';
+            src: url('./炮制工具/font/FZWZZYJW.TTF') format('truetype')
+        }
+
+        .TIJF {
+            font-family: 'FZGuoMeiJinDaoTiJF-Regular';
+        }
+
+        .SRGB {
+            font-family: 'FZKeBenFangSongS-R-GB-Regular';
+        }
+
+        .ZYJW {
+            font-family: 'FZWZZYJW-Regular';
+        }
+
+
+
+        .trans {
+
+            /* display: inline; */
+            position: relative;
+            transform: scale(0.75);
+            transform-origin: center 0;
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .midleimage {
+            display: block;
+            /* margin-left: auto;
+            margin-right: auto; */
+            position: absolute;
+            top: 126px;
+            left: 343px;
+        }
+
+        .macbook-pro {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .macbook-pro .div {
+            /* background-color: #ffffff; */
+            width: 1512px;
+            height: 982px;
+            position: relative;
+        }
+
+        .overlap {
+            position: fixed;
+            width: 50px;
+            height: 170px;
+            top: 104px;
+            left: 85vw;
+            z-index: 1;
+        }
+
+        .ellipse {
+            position: absolute;
+            width: 44px;
+            height: 44px;
+            top: 120px;
+            left: 3px;
+            border-radius: 33px;
+            background: linear-gradient(180deg, rgb(150, 186, 168) 0%, rgb(255, 255, 255) 100%);
+        }
+
+        .text-wrapper {
+            width: 57px;
+            top: 0;
+            left: 0;
+            color: #000000;
+            font-size: 32px;
+            position: absolute;
+            font-family: "FZKeBenFangSongS-R-GB-Regular", Helvetica;
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+
+        .text-wrapper-2 {
+            width: 57px;
+            top: 24px;
+            left: -40px;
+            color: #000000;
+            font-size: 32px;
+            position: absolute;
+            font-family: "FZKeBenFangSongS-R-GB-Regular", Helvetica;
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+
+        .macbook-pro .text-wrapper-3 {
+            top: 799px;
+            left: 204px;
+            color: #000000;
+            font-size: 20px;
+            white-space: nowrap;
+            position: absolute;
+            font-family: "FZKeBenFangSongS-R-GB-Regular", Helvetica;
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+
+        .macbook-pro .text-wrapper-4 {
+            top: 722px;
+            left: 205px;
+            color: #000000;
+            font-size: 20px;
+            white-space: nowrap;
+            position: absolute;
+            font-family: "FZKeBenFangSongS-R-GB-Regular", Helvetica;
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+
+        .macbook-pro .text-wrapper-5 {
+            top: 645px;
+            left: 205px;
+            color: #000000;
+            font-size: 20px;
+            white-space: nowrap;
+            position: absolute;
+            font-family: "FZKeBenFangSongS-R-GB-Regular", Helvetica;
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+
+        .macbook-pro .text-wrapper-6 {
+            top: 876px;
+            left: 208px;
+            color: #000000;
+            font-size: 20px;
+            white-space: nowrap;
+            position: absolute;
+            font-family: "FZKeBenFangSongS-R-GB-Regular", Helvetica;
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+
+        .macbook-pro .text-wrapper-7 {
+            top: 568px;
+            left: 209px;
+            color: #000000;
+            font-size: 20px;
+            white-space: nowrap;
+            position: absolute;
+            font-family: "FZKeBenFangSongS-R-GB-Regular", Helvetica;
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+
+        .macbook-pro .group {
+            position: absolute;
+            width: 869px;
+            height: 787px;
+            top: 107px;
+            left: 381px;
+        }
+
+        .macbook-pro .overlap-group {
+            position: relative;
+            width: 871px;
+            height: 787px;
+        }
+
+        .macbook-pro .xiuzhigroup {
+            position: absolute;
+            width: 443px;
+            height: 406px;
+            top: 0;
+            left: 211px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .macbook-pro .xiuzhigroup:hover .text-wrapper-8 {
+            display: flex;
+        }
+
+        .macbook-pro .text-wrapper-8 {
+            display: none;
+            top: 357px;
+            left: 161px;
+            color: #9d9d9d;
+            font-size: 45px;
+            white-space: nowrap;
+            position: absolute;
+            font-family: "FZKeBenFangSongS-R-GB-Regular", Helvetica;
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+
+        .macbook-pro .xiuzhicao {
+            position: absolute;
+            width: 441px;
+            height: 210px;
+            top: 0;
+            left: 0;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .macbook-pro .xiuzhicao:hover {
+            transform: translateY(-30px);
+        }
+
+        .macbook-pro .huozhigroup:hover .text-wrapper-9 {
+            display: flex;
+        }
+
+        .macbook-pro .huozhigroup {
+            position: absolute;
+            width: 414px;
+            height: 430px;
+            top: 357px;
+            left: 359px;
+        }
+
+        .macbook-pro .text-wrapper-9 {
+            display: none;
+            top: 0;
+            left: 13px;
+            color: #9d9d9d;
+            font-size: 45px;
+            white-space: nowrap;
+            position: absolute;
+            font-family: "FZKeBenFangSongS-R-GB-Regular", Helvetica;
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+
+        .macbook-pro .huozhicao {
+            position: absolute;
+            width: 412px;
+            height: 253px;
+            top: 176px;
+            left: 0;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .macbook-pro .huozhicao:hover {
+
+            transform: translate(30px, 30px);
+
+
+        }
+
+        .macbook-pro .qitagroup {
+            position: absolute;
+            width: 464px;
+            height: 336px;
+            top: 90px;
+            left: 0;
+        }
+
+        .macbook-pro .qitagroup:hover .text-wrapper-10 {
+            display: flex;
+        }
+
+        .macbook-pro .text-wrapper-10 {
+            display: none;
+            top: 267px;
+            left: 372px;
+            color: #9d9d9d;
+            font-size: 45px;
+            white-space: nowrap;
+            position: absolute;
+            font-family: "FZKeBenFangSongS-R-GB-Regular", Helvetica;
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+
+        .macbook-pro .qitacao {
+            position: absolute;
+            width: 286px;
+            height: 336px;
+            top: 0;
+            left: 0;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .macbook-pro .qitacao:hover {
+
+            transform: translate(-30px, -30px);
+
+        }
+
+        .macbook-pro .shuihuogongzhigroup {
+            position: absolute;
+            width: 520px;
+            height: 412px;
+            top: 357px;
+            left: 33px;
+        }
+
+        .macbook-pro .shuihuogongzhigroup:hover .text-wrapper-11 {
+            display: flex;
+        }
+
+        .macbook-pro .text-wrapper-11 {
+            display: none;
+            top: 0;
+            left: 300px;
+            color: #9d9d9d;
+            font-size: 45px;
+            white-space: nowrap;
+            position: absolute;
+            font-family: "FZKeBenFangSongS-R-GB-Regular", Helvetica;
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: normal;
+            text-align: center;
+        }
+
+        .macbook-pro .shuihuogongzhicao {
+            position: absolute;
+            width: 304px;
+            height: 332px;
+            top: 80px;
+            left: 0;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .macbook-pro .shuihuogongzhicao:hover {
+
+            transform: translate(-30px, 30px);
+
+        }
+
+        .macbook-pro .shuizhigroup {
+            position: absolute;
+            width: 499px;
+            height: 375px;
+            top: 149px;
+            left: 372px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .macbook-pro .shuizhigroup:hover .text-wrapper-12 {
+            display: flex;
+        }
+
+        .macbook-pro .text-wrapper-12 {
+            display: none;
+            top: 208px;
+            left: 0;
+            color: #9d9d9d;
+            font-size: 45px;
+            white-space: nowrap;
+            position: absolute;
+            font-family: "FZKeBenFangSongS-R-GB-Regular", Helvetica;
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+
+        .macbook-pro .shuizhicao {
+            position: absolute;
+            width: 256px;
+            height: 375px;
+            top: 0;
+            left: 242px;
+            background-image: url('img/shuizhicao.svg');
+            background-size: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .shuizhicao:hover {
+            transform: translate(30px, -30px);
+            /* 鼠标悬停时的图片 */
+        }
+
+        .macbook-pro .overlap-2 {
+            position: absolute;
+            width: 108px;
+            height: 378px;
+            top: 545px;
+            left: 81px;
+        }
+
+        .macbook-pro .xiuzhihua {
+            position: absolute;
+            width: 77px;
+            height: 77px;
+            top: 0;
+            left: 15px;
+            object-fit: cover;
+        }
+
+        .macbook-pro .huozhihua {
+            position: absolute;
+            width: 68px;
+            height: 64px;
+            top: 76px;
+            left: 20px;
+            object-fit: cover;
+        }
+
+        .macbook-pro .shuihuogongzhihua {
+            position: absolute;
+            width: 96px;
+            height: 68px;
+            top: 236px;
+            left: 6px;
+            object-fit: cover;
+        }
+
+        .macbook-pro .shuizhihua {
+            position: absolute;
+            width: 102px;
+            height: 102px;
+            top: 139px;
+            left: 3px;
+            object-fit: cover;
+        }
+
+        .macbook-pro .qitahua {
+            position: absolute;
+            width: 108px;
+            height: 78px;
+            top: 300px;
+            left: 0;
+            object-fit: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top TIJW">
+        <div class="container">
+            <a href="#" class="navbar-brand TIJF">药香熏蕴</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto TIJF">
+                    <li class="item"><a href="index.htm#pzqy">
+                            <div class="nav-link">中药炮制的起源</div>
+                        </a>
+                    </li>
+                    <li class="item"><a href="index.htm#gjjf">
+                            <div class="nav-link">古籍技法</div>
+                        </a>
+                    </li>
+                    <li class="item"><a href="index.htm#pzff">
+                            <div class="nav-link">炮制方法</div>
+                        </a>
+                    </li>
+                    <li class="item"><a href="index.htm#pzmd">
+                            <div class="nav-link">炮制目的</div>
+                        </a>
+                    </li>
+                    <li class="item"><a href="index.htm#cybz">
+                            <div class="nav-link">成药标准</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+    <a href="index.htm#fftb">
+        <button class="back">
+            <img class="backimg" src="img/back.svg" />
+        </button></a>
+    </button>
+    <div style="height: 921px;">
+        <a href="#top">
+            <div class="overlap">
+                <div class="text-wrapper-2">炮制方法与</div>
+                <div class="ellipse"></div>
+                <div class="text-wrapper">具体工艺</div>
+            </div>
+        </a>
+        <div class="trans">
+            <div class="macbook-pro" id="top">
+                <div class="div">
+
+                    <a href="#shuihuozhi">
+                        <div class="text-wrapper-3">水火共制</div>
+                    </a>
+                    <a href="#shuizhi">
+                        <div class="text-wrapper-4">水制</div>
+                    </a>
+                    <a href="#huozhi">
+                        <div class="text-wrapper-5">火制</div>
+                    </a>
+                    <a href="#qita">
+                        <div class="text-wrapper-6">其他</div>
+                    </a>
+                    <a href="#xiuzhi">
+                        <div class="text-wrapper-7">修制</div>
+                    </a>
+
+                    <div class="group">
+                        <div class="overlap-group">
+                            <div class="xiuzhigroup">
+                                <div class="text-wrapper-8">修制</div>
+                                <a href="#xiuzhi">
+                                    <img class="xiuzhicao" src="img/xiuzhicao.svg" /></a>
+                            </div>
+                            <div class="huozhigroup">
+                                <div class="text-wrapper-9">火制</div>
+                                <a href="#huozhi">
+                                    <img class="huozhicao" src="img/huozhicao.svg" /></a>
+                            </div>
+                            <div class="qitagroup">
+                                <div class="text-wrapper-10">其他</div>
+                                <a href="#qita"><img class="qitacao" src="img/qitacao.svg" /></a>
+
+                            </div>
+                            <div class="shuihuogongzhigroup">
+                                <div class="text-wrapper-11">水火共制</div>
+                                <a href="#shuihuozhi"><img class="shuihuogongzhicao"
+                                        src="img/shuihuogongzhicao.svg" /></a>
+
+                            </div>
+                            <div class="shuizhigroup">
+                                <div class="text-wrapper-12">水制</div>
+                                <a href="#shuizhi">
+                                    <div class="shuizhicao"></div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlap-2">
+                        <img class="xiuzhihua" src="img/xiuzhihua.svg" />
+                        <img class="huozhihua" src="img/huozhihua.svg" />
+                        <img class="shuihuogongzhihua" src="img/shuihuogongzhihua.svg" />
+                        <img class="shuizhihua" src="img/shuizhihua.svg" />
+                        <img class="qitahua" src="img/qitahua.svg" />
+                    </div>
+                </div>
+            </div>
+            <div id="xiuzhi" class="macbook-pro">
+                <div class="div">
+                    <a href="#shuihuozhi">
+                        <div class="text-wrapper-3">水火共制</div>
+                    </a>
+                    <a href="#shuizhi">
+                        <div class="text-wrapper-4">水制</div>
+                    </a>
+                    <a href="#huozhi">
+                        <div class="text-wrapper-5">火制</div>
+                    </a>
+                    <a href="#qita">
+                        <div class="text-wrapper-6">其他</div>
+                    </a>
+                    <a href="#xiuzhi">
+                        <div class="text-wrapper-7">修制</div>
+                    </a>
+                    <img class="midleimage" src="img/bigxiuhua.svg" />
+                    <div class="overlap-2">
+                        <img class="xiuzhihua" src="img/xiuzhihua.svg" />
+                        <img class="huozhihua" src="img/huozhihua.svg" />
+                        <img class="shuihuogongzhihua" src="img/shuihuogongzhihua.svg" />
+                        <img class="shuizhihua" src="img/shuizhihua.svg" />
+                        <img class="qitahua" src="img/qitahua.svg" />
+                    </div>
+                </div>
+            </div>
+            <div id="huozhi" class="macbook-pro">
+                <div class="div">
+                    <a href="#shuihuozhi">
+                        <div class="text-wrapper-3">水火共制</div>
+                    </a>
+                    <a href="#shuizhi">
+                        <div class="text-wrapper-4">水制</div>
+                    </a>
+                    <a href="#huozhi">
+                        <div class="text-wrapper-5">火制</div>
+                    </a>
+                    <a href="#qita">
+                        <div class="text-wrapper-6">其他</div>
+                    </a>
+                    <a href="#xiuzhi">
+                        <div class="text-wrapper-7">修制</div>
+                    </a>
+                    <img class="midleimage" src="img/bighuohua.svg" />
+                    <div class="overlap-2">
+                        <img class="xiuzhihua" src="img/xiuzhihua.svg" />
+                        <img class="huozhihua" src="img/huozhihua.svg" />
+                        <img class="shuihuogongzhihua" src="img/shuihuogongzhihua.svg" />
+                        <img class="shuizhihua" src="img/shuizhihua.svg" />
+                        <img class="qitahua" src="img/qitahua.svg" />
+                    </div>
+                </div>
+            </div>
+            <div id="shuizhi" class="macbook-pro">
+                <div class="div">
+                    <a href="#shuihuozhi">
+                        <div class="text-wrapper-3">水火共制</div>
+                    </a>
+                    <a href="#shuizhi">
+                        <div class="text-wrapper-4">水制</div>
+                    </a>
+                    <a href="#huozhi">
+                        <div class="text-wrapper-5">火制</div>
+                    </a>
+                    <a href="#qita">
+                        <div class="text-wrapper-6">其他</div>
+                    </a>
+                    <a href="#xiuzhi">
+                        <div class="text-wrapper-7">修制</div>
+                    </a>
+                    <img class="midleimage" src="img/bigxiuzhihua.svg" />
+                    <div class="overlap-2">
+                        <img class="xiuzhihua" src="img/xiuzhihua.svg" />
+                        <img class="huozhihua" src="img/huozhihua.svg" />
+                        <img class="shuihuogongzhihua" src="img/shuihuogongzhihua.svg" />
+                        <img class="shuizhihua" src="img/shuizhihua.svg" />
+                        <img class="qitahua" src="img/qitahua.svg" />
+                    </div>
+                </div>
+            </div>
+            <div id="shuihuozhi" class="macbook-pro">
+                <div class="div">
+                    <a href="#shuihuozhi">
+                        <div class="text-wrapper-3">水火共制</div>
+                    </a>
+                    <a href="#shuizhi">
+                        <div class="text-wrapper-4">水制</div>
+                    </a>
+                    <a href="#huozhi">
+                        <div class="text-wrapper-5">火制</div>
+                    </a>
+                    <a href="#qita">
+                        <div class="text-wrapper-6">其他</div>
+                    </a>
+                    <a href="#xiuzhi">
+                        <div class="text-wrapper-7">修制</div>
+                    </a>
+                    <img class="midleimage" src="img/bigshuihuogongzhi.svg" />
+                    <div class="overlap-2">
+                        <img class="xiuzhihua" src="img/xiuzhihua.svg" />
+                        <img class="huozhihua" src="img/huozhihua.svg" />
+                        <img class="shuihuogongzhihua" src="img/shuihuogongzhihua.svg" />
+                        <img class="shuizhihua" src="img/shuizhihua.svg" />
+                        <img class="qitahua" src="img/qitahua.svg" />
+                    </div>
+                </div>
+            </div>
+            <div id="qita" class="macbook-pro">
+                <div class="div">
+                    <a href="#shuihuozhi">
+                        <div class="text-wrapper-3">水火共制</div>
+                    </a>
+                    <a href="#shuizhi">
+                        <div class="text-wrapper-4">水制</div>
+                    </a>
+                    <a href="#huozhi">
+                        <div class="text-wrapper-5">火制</div>
+                    </a>
+                    <a href="#qita">
+                        <div class="text-wrapper-6">其他</div>
+                    </a>
+                    <a href="#xiuzhi">
+                        <div class="text-wrapper-7">修制</div>
+                    </a>
+                    <img class="midleimage" src="img/bigqita.svg" />
+                    <div class="overlap-2">
+                        <img class="xiuzhihua" src="img/xiuzhihua.svg" />
+                        <img class="huozhihua" src="img/huozhihua.svg" />
+                        <img class="shuihuogongzhihua" src="img/shuihuogongzhihua.svg" />
+                        <img class="shuizhihua" src="img/shuizhihua.svg" />
+                        <img class="qitahua" src="img/qitahua.svg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
